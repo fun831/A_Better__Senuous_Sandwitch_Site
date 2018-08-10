@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './navbar';
-
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 export default class Locations extends Component {
 	 render() {
 		return (
@@ -14,7 +14,17 @@ export default class Locations extends Component {
 					1680 S State St Orem, UT 84097-8070 801-225-9475
 				</div>
 				<div>
-					MAP
+					<Map google={this.props.google} zoom={14}>
+	
+						<Marker onClick={this.onMarkerClick}
+									name={'Current location'} />
+	
+						<InfoWindow onClose={this.onInfoWindowClose}>
+							<div>
+								<h1>{this.state.selectedPlace.name}</h1>
+							</div>
+						</InfoWindow>
+					</Map>
 				</div>
 				<div>
 					Phone number and hours
@@ -23,3 +33,7 @@ export default class Locations extends Component {
 		);
 	}
 }
+
+export default GoogleApiWrapper({
+  apiKey: (YOUR_GOOGLE_API_KEY_GOES_HERE)
+})(MapContainer)
