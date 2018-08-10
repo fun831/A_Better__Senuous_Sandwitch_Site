@@ -1,3 +1,5 @@
+@import "variables";
+
 .navbar {
     width: 100vw;         
     list-style-type: none;
@@ -7,16 +9,16 @@
 }
 
 .navbar img {
-    width: 337;
-    height: 190;
+    width: 20vw;
+    
 }    
 
 .nav {
-    width: 76%;
+    width: 80vw;
     display: flex;
     justify-content: space-between;
     align-self: start;
-    background-color: #333;
+    background-color: black;
 }
 
 .link {
