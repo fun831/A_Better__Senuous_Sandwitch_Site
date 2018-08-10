@@ -8,8 +8,11 @@ import {
 } from 'reactstrap';
 
 const items = [
-    {
-      src:"/assests/sandwich1.jpg"
+    
+    { 
+      src:"/assets/sandwich1.jpg",
+      altText: 'Slide 1',
+      caption: 'Slide 1'
     },
     {
       src: "/assets/sandwich2.jpg",
@@ -71,7 +74,8 @@ const items = [
             onExiting={this.onExiting}
             onExited={this.onExited}
           >
-            <CarouselCaption className="text" captionText={item.caption} captionHeader={item.caption} />
+          <img src={item.src} alt={item.altText} />
+            <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
           </CarouselItem>
         );
       });
