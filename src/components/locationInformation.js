@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './navbar';
+import Locations from './mapApi';
 
 const Location = (locationName, address, number, hours) => {
   return (
