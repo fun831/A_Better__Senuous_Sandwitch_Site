@@ -15,9 +15,6 @@ export default class Locations extends Component {
 				<div>
 					MAP
 				</div>
-				<div>
-					Phone number and hours
-				</div>
 			</div>
 		);
 	}
