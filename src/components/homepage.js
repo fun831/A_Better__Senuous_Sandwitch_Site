@@ -7,9 +7,6 @@ import Navbar from './navbar';
 export default class Homepage extends Component {
 	 render() {
 		return (
-			<div className=''>
-				<div>Menu Link</div>
-				<div>About Us</div>
 			<div className='homepage'>
 				<div className='greeting'>
 					<h1>Welcome to Sensuous Sandwiches! Thanks for visiting!!</h1>
@@ -25,7 +22,6 @@ export default class Homepage extends Component {
 						<i className="fab fa-vine"></i>
 						<i className="fab fa-youtube"></i>
 					</div>
-				</div>
 				</div>
 			</div>
 		);
