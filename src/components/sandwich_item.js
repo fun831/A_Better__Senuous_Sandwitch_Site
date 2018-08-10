@@ -8,8 +8,8 @@ class SandwichItem extends Component {
     return (      
         <div className="sandwich_list">
             
-            <h3 className="h1">{this.props.title}</h3>
-            <p className="description_text">{this.props.description}</p>
+            <h3 className="premium_sandwhich">{this.props.title}</h3>
+            <p className="premium_description">{this.props.description}</p>
         </div>    
     );
   }
