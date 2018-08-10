@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 import Locations from './components/locations';
 import Menu from './components/menu';
+import Api from './components/mapApi';
 
 
 function main() {
@@ -23,6 +24,7 @@ function main() {
           <Route exact path="/" component={App} />
           <Route exact path="/locations" component={Locations} />
           <Route exact path="/menu" component={Menu} />
+          <Route exact path="/api" component={Api} />        
         </Switch>
       </BrowserRouter>
     </Provider>
