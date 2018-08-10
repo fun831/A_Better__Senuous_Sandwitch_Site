@@ -14,6 +14,7 @@ import './style/main.scss';
 import Locations from './components/locations';
 import Menu from './components/menu';
 import Api from './components/mapApi';
+import Homepage from './components/homepage';
 
 
 function main() {
