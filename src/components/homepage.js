@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 
 import SlideShow from './slideShow';
-
 import Navbar from './navbar';
+
 
 export default class Homepage extends Component {
 	 render() {
 		return (
-			<div className=''>
-				<div>Menu Link</div>
-				<div>About Us</div>
 			<div className='homepage'>
+			<Navbar/>
 				<div className='greeting'>
+				
 					<h1>Welcome to Sensuous Sandwiches! Thanks for visiting!!</h1>
 					<p>At Sensuous Sandwiches we believe in using only the finest quality, freshest ingredients.</p>
 				<SlideShow />
@@ -25,7 +24,6 @@ export default class Homepage extends Component {
 						<i className="fab fa-vine"></i>
 						<i className="fab fa-youtube"></i>
 					</div>
-				</div>
 				</div>
 			</div>
 		);
