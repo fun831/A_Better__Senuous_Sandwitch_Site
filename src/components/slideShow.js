@@ -12,17 +12,17 @@ const items = [
     { 
       src:"/assets/sandwich1.jpg",
       altText: 'Slide 1',
-      caption: 'Slide 1'
+      caption: ''
     },
     {
       src: "/assets/sandwich2.jpg",
       altText: 'Slide 2',
-      caption: 'Slide 2'
+      caption: ''
     },
     {
       src: "/assets/sandwich3.jpg",
       altText: 'Slide 3',
-      caption: 'Slide 3'
+      caption: ''
     }
   ];
   
@@ -68,7 +68,7 @@ const items = [
       const slides = items.map((item) => {
         return (
           <CarouselItem
-            className="custom-tag"
+            className="carousel-item"
             tag="div"
             key={item.src}
             onExiting={this.onExiting}
@@ -82,17 +82,9 @@ const items = [
   
       return (
         <div>
-          <style>
-            {
-              `.custom-tag {
-                  max-width: 100%;
-                  height: 300px;
-                  margin-top: 250px;
-                  background: green;
-                }`
-            }
-          </style>
+          
           <Carousel
+            className="carousel"
             activeIndex={activeIndex}
             next={this.next}
             previous={this.previous}
