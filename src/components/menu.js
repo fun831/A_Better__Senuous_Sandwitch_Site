@@ -64,7 +64,7 @@ export default class Menu extends Component {
 					</div>
 
 					<div className="premium">
-						<div>PREMIUM</div>
+						<div className="premium_header">PREMIUM</div>
 						{
 						this.sandwichs.map(sandwich => {
 							return (
