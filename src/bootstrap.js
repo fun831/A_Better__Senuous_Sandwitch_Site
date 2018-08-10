@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import App from './components/app';
 import reducers from './reducers';
+import App from './components/app';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 import Locations from './components/locations';
 import Menu from './components/menu';
+import Api from './components/mapApi';
 
 
 function main() {
@@ -23,6 +24,7 @@ function main() {
           <Route exact path="/" component={App} />
           <Route exact path="/locations" component={Locations} />
           <Route exact path="/menu" component={Menu} />
+          <Route exact path="/api" component={Api} />        
         </Switch>
       </BrowserRouter>
     </Provider>

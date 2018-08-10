@@ -1,0 +1,35 @@
+.navbar {
+    width: 100vw;         
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.navbar img {
+    width: 337;
+    height: 190;
+}    
+
+.nav {
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+    background-color: #333;
+}
+
+.link {
+    width: 100wv;
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    
+    
+}
+
+.link:hover {
+    background-color: red;
+    text-decoration: none;
+    color: green;
+}
